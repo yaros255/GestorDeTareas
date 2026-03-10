@@ -1,21 +1,34 @@
-.vs
+# =========================
+# Visual Studio
+# =========================
+.vs/
 
-# Ignorar carpetas de compilación de Visual Studio
-bin/
-obj/
+# =========================
+# Carpetas de compilación
+# =========================
+GestorDeTareasWinForms/bin/
+GestorDeTareasWinForms/obj/
 
-# Ignorar archivos de usuario y configuración local
-*.user
+# =========================
+# Archivos de usuario de Visual Studio
+# =========================
+GestorDeTareasWinForms/*.user
 *.suo
 *.userosscache
 
-# Ignorar archivos de NuGet
+# =========================
+# NuGet
+# =========================
 packages/
 
-# Ignorar archivos de depuración y logs
+# =========================
+# Logs y caches
+# =========================
 *.log
 *.cache
 
-# Ignorar archivos del sistema operativo
+# =========================
+# Archivos del sistema operativo
+# =========================
 .DS_Store
 Thumbs.db
