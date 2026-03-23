@@ -69,11 +69,12 @@
             // 
             // listBox1
             // 
+            listBox1.Font = new Font("Consolas", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 0);
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(486, 9);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(302, 184);
+            listBox1.Size = new Size(500, 185);
             listBox1.TabIndex = 3;
             // 
             // desc_txt
@@ -143,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 251);
+            ClientSize = new Size(1000, 275);
             Controls.Add(complete_btn);
             Controls.Add(delete_btn);
             Controls.Add(modify_btn);
