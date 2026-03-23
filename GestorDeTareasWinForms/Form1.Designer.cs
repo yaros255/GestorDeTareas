@@ -39,11 +39,13 @@
             modify_btn = new Button();
             delete_btn = new Button();
             complete_btn = new Button();
+            priority_chkbox = new CheckBox();
+            priority_text = new Label();
             SuspendLayout();
             // 
             // add_btn
             // 
-            add_btn.Location = new Point(189, 207);
+            add_btn.Location = new Point(113, 225);
             add_btn.Name = "add_btn";
             add_btn.Size = new Size(113, 38);
             add_btn.TabIndex = 4;
@@ -74,7 +76,7 @@
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(486, 9);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(500, 185);
+            listBox1.Size = new Size(500, 184);
             listBox1.TabIndex = 3;
             // 
             // desc_txt
@@ -140,11 +142,31 @@
             complete_btn.UseVisualStyleBackColor = true;
             complete_btn.Click += complete_btn_Click;
             // 
+            // priority_chkbox
+            // 
+            priority_chkbox.AutoSize = true;
+            priority_chkbox.Location = new Point(113, 198);
+            priority_chkbox.Name = "priority_chkbox";
+            priority_chkbox.Size = new Size(15, 14);
+            priority_chkbox.TabIndex = 11;
+            priority_chkbox.UseVisualStyleBackColor = true;
+            // 
+            // priority_text
+            // 
+            priority_text.AutoSize = true;
+            priority_text.Location = new Point(12, 198);
+            priority_text.Name = "priority_text";
+            priority_text.Size = new Size(58, 15);
+            priority_text.TabIndex = 12;
+            priority_text.Text = "Prioritaria";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1000, 275);
+            Controls.Add(priority_text);
+            Controls.Add(priority_chkbox);
             Controls.Add(complete_btn);
             Controls.Add(delete_btn);
             Controls.Add(modify_btn);
@@ -175,5 +197,7 @@
         private Button modify_btn;
         private Button delete_btn;
         private Button complete_btn;
+        private CheckBox priority_chkbox;
+        private Label priority_text;
     }
 }

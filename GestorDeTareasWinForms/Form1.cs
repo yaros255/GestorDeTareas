@@ -12,8 +12,9 @@ namespace GestorDeTareasWinForms
             string titulo = titulo_field.Text;
             string desc = desc_field.Text;
             DateTime fecha = datetime_field.Value;
+            bool prioritaria = priority_chkbox.Checked;
 
-            Tarea t = new Tarea(titulo, desc, false, fecha, true);
+            Tarea t = new Tarea(titulo, desc, false, fecha, prioritaria);
 
             listBox1.Items.Add(t);
         }
