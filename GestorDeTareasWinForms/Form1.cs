@@ -13,7 +13,7 @@ namespace GestorDeTareasWinForms
             string desc = desc_field.Text;
             DateTime fecha = datetime_field.Value;
 
-            Tarea t = new Tarea(titulo, desc, false, fecha);
+            Tarea t = new Tarea(titulo, desc, false, fecha, true);
 
             listBox1.Items.Add(t);
         }

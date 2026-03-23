@@ -20,18 +20,21 @@ namespace GestorDeTareasWinForms
         private string descripcion;
         private bool completada;
         private DateTime fecha;
-        public Tarea(string titulo, string descripcion, bool completada, DateTime fecha)
+        private bool prioritaria;
+        public Tarea(string titulo, string descripcion, bool completada, DateTime fecha, bool prioritaria)
         {
             this.titulo = titulo;
             this.descripcion = descripcion;
             this.completada = completada;
             this.fecha = fecha;
+            this.prioritaria = prioritaria;
         }
         
         public override string ToString()
         {
             String str = "";
-            str += "| " + this.titulo;
+            str += (this.prioritaria) ? "[!]" : "[ ]";
+            str += " " + this.titulo;
             str += " | " + this.descripcion + " | ";
             str += (this.completada) ? "completada" : "no completada";
             str += " | " + fecha.ToString() + " |";
